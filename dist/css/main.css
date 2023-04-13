@@ -177,6 +177,8 @@ input[class^='btn-']:hover {
     height: 100%;
     transform: scale(2) translateX(-75%) translateY(-75%) rotate(-45deg);
     transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); }
+  .item:hover:after {
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(45deg); }
 
 body {
   font-family: 'Courier Prime', monospace;

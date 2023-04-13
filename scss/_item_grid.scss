@@ -26,5 +26,7 @@
     }
 
     //Bring in main colour overlay
-    &:hover:after
+    &:hover:after {
+        transform: scale(2) translateX(-75%) translateY(-75%) rotate(45deg);
+    }
 }
