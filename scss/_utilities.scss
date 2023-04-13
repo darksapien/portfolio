@@ -1,0 +1,269 @@
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all .5s;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn {
+    &-main {
+
+        @extend %btn-shared;
+        background-color: $main-color;
+        color: #333;
+
+    }
+
+    &-light {
+
+        @extend %btn-shared;
+        background-color: $light-color;
+        color: #333;
+
+    }
+
+    &-dark {
+
+        @extend %btn-shared;
+        background-color: $dark-color;
+        color: #f4f4f4;
+
+    }
+
+    &:hover {
+        background-color: darken($main-color, 10%);
+    }
+}
+
+//regular expressions
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    background-color: $main-color;
+}
+
+//backgrounds
+.bg {
+    &-main {
+        background: $main-color;
+    }
+
+    &-light {
+        background: $light-color;
+    }
+
+    &-dark {
+        background: $dark-color;
+    }
+
+    &-medium {
+        background: $medium-color;
+    }
+
+}
+
+
+.lead {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+//Padding
+.py {
+    &-1 {
+        padding-top: 1rem;
+    }
+
+    &-2 {
+        padding-top: 2rem;
+        // border: 1px solid red;
+    }
+
+    &-3 {
+        padding-top: 3rem;
+    }
+
+    &-4 {
+        padding-top: 4rem;
+    }
+
+}
+
+// margins
+.my {
+    &-1 {
+        margin-top: 1rem;
+    }
+
+    &-2 {
+        margin-top: 2rem;
+        // border: 1px solid red;
+    }
+
+    &-3 {
+        margin-top: 3rem;
+    }
+
+    &-4 {
+        margin-top: 4rem;
+    }
+
+}
+
+
+//home Section A
+#home {
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .fas {
+            color: $main-color;
+            padding-bottom: .4rem;
+        }
+
+    }
+
+    //home Section B
+    &-b {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 3rem;
+
+
+            li {
+                line-height: 2;
+
+                & .stats-title {
+                    font-size: 1.5rem;
+                }
+
+                & .stats-number {
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                }
+
+            }
+
+            div {
+                padding: 3rem 0;
+
+                &:nth-child(odd) {
+                    background-color: $light-color;
+                }
+
+                &:nth-child(even) {
+                    background-color: $medium-color;
+                }
+            }
+
+        }
+    }
+
+
+
+    &-c {
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+            // border: 1px solid red;
+
+            &-step {
+                position: absolute;
+                float: right;
+                top: 0px;
+                right: 0;
+                font-size: 28px;
+                background: $main-color;
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+                color: set-text-color($main-color);
+                // border: 1px solid green;
+
+            }
+
+
+
+            &-icon {
+                border-radius: 50%;
+                background: $dark-color;
+                color: set-text-color($dark-color);
+                padding: 2rem;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+
+                // border: 1px solid blue;
+                &:hover {
+                    background: $main-color;
+                    width: 90px;
+                    height: 90px;
+                    line-height: 90px;
+
+                    .process-step {
+                        background: $dark-color;
+                        color: #fff;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+}
+
+.section-title {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+
+
+}
+
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: $main-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+
+}
