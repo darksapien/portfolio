@@ -401,11 +401,9 @@ img {
   #home-a .specials,
   #home-b .stats,
   #home-c .process,
+  #about-d .testimonials,
   .items {
     grid-template-columns: 1fr; }
-  #about-d .testimonials {
-    grid-template-columns: repeat(1, 1fr);
-    border: solid 6px red; }
   #about-a .about-info {
     display: grid;
     grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
