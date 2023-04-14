@@ -27,8 +27,8 @@ ul {
 }
 
 h2,
-h2,
-h3 {
+h3,
+h4 {
     text-transform: uppercase;
 }
 
@@ -38,12 +38,12 @@ img {
 
 
 // Header
-
 //logo
+
 #logo {
     width: 70px;
     height: 70px;
-    color: fff;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -119,8 +119,6 @@ img {
 
     &-a {
         .text-fields {
-            width: 80%;
-            margin: 0 auto;
             display: grid;
             grid-template-areas:
                 'name email'
@@ -157,6 +155,7 @@ img {
                 font-family: 'Courier Prime', monospace;
                 font-weight: 400;
                 line-height: 1.7rem;
+                border: 1px solid $medium-color;
                 border-radius: 5px;
             }
 
@@ -188,7 +187,6 @@ img {
     }
 
     &-c {
-        // border: 4px solid red;
         padding: 0;
 
         h1 {
@@ -227,7 +225,6 @@ img {
 
         .social .fab {
             margin-right: 1rem;
-            border: 2px solid #fff;
             border-radius: 50%;
             height: 20px;
             width: 20px;
@@ -235,10 +232,14 @@ img {
             text-align: center;
             padding: 0.5rem;
             color: #fff;
+            // border: solid 1px red;
 
             &:hover {
-                background: $main-color;
+                // border: solid thin $main-color;
+                // background: $main-color;
                 // border-color: $main-color;
+                color: $main-color;
+
             }
 
         }
@@ -248,22 +249,23 @@ img {
 
 @import 'media'; //Media Queries
 
+//needed to move .about-info out of #about-a for the grid to work.
+.about-info {
+    display: grid;
+    grid-template-areas:
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
+    grid-gap: 1.2rem;
+    // border: 1px solid orange;
+    margin-bottom: 4rem;
 
+}
 
 // About Me Section
 #about {
 
     &-a {
-        .about-info {
-            display: grid;
-            grid-template-areas:
-                'bioimage bio bio'
-                'aw1 aw2 aw3';
-            grid-gap: 1.2rem;
-            // border: 1px solid red;
-            margin-bottom: 4rem;
 
-        }
 
         //Grid Area
         .bio-image {
@@ -281,6 +283,8 @@ img {
 
         .award-1 {
             grid-area: aw1;
+            // border: 1px solid red;
+
         }
 
         .award-2 {
@@ -330,7 +334,7 @@ img {
                 // display: block;
                 width: 50%;
                 padding: 0;
-                border: solid 1px red;
+                // border: solid 1px red;
                 object-fit: contain;
 
             }
@@ -344,11 +348,22 @@ img {
             grid-template-columns: repeat(4, 1fr);
             grid-gap: .5rem;
 
+            div {
+                // border: 1px solid black;
+
+
+            }
+
             ul {
                 list-style: none;
                 display: flex;
                 align-items: center;
                 margin-top: 1rem;
+
+                li {
+                    // border: 1px solid orangered;
+
+                }
 
             }
 
@@ -361,13 +376,16 @@ img {
 
             img {
                 width: 50px;
+                height: 50px;
+
                 border-radius: 50%;
                 margin-right: 1rem;
-                height: 50%;
             }
         }
 
 
     }
+
+
 
 }
