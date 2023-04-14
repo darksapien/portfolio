@@ -105,9 +105,8 @@ img {
 
     &-inner {
         background: $bg-image no-repeat 20% 30% / cover;
-        height: 5, 5rem;
+        height: 5rem;
         border-bottom: 3px solid $main-color;
-        width: 70%;
         margin: 0 auto;
         text-align: center;
     }
@@ -246,6 +245,9 @@ img {
     }
 
 }
+
+@import 'media'; //Media Queries
+
 
 
 // About Me Section
