@@ -9,7 +9,7 @@ body {
     line-height: 1.7rem;
     // border: solid 1px red;
     height: 100%;
-    background: purple;
+    // background: purple;
 
 
 
@@ -25,7 +25,7 @@ body {
         min-height: 100%;
         display: grid;
         grid-template-rows: auto 1fr auto;
-        border: solid 1px yellow;
+        // border: solid 1px yellow;
 
 
         .page-body {
@@ -139,7 +139,7 @@ img {
         border-bottom: 3px solid $main-color;
         margin: 0 auto;
         text-align: center;
-        border: solid 1px greenyellow;
+        // border: solid 1px greenyellow;
     }
 
 }
@@ -150,23 +150,7 @@ img {
 
 #contact {
 
-    // .sticky-footer-wrapper {
-    //     display: flex;
-    //     flex-direction: column;
-    //     box-sizing: border-box;
-    //     min-height: 100vh;
-    //     width: auto;
-    // }
 
-    // #header-inner,
-    // #main-footer {
-    //     flex-grow: 0;
-    //     flex-shrink: 0;
-    // }
-
-    // .page-body {
-    //     flex-grow: 1;
-    // }
 
     &-a {
         .text-fields {
