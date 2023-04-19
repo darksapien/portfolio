@@ -384,7 +384,7 @@ img {
 
     &-d {
         .testimonials {
-            display: grid;
+            display: hidden;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: .5rem;
 
@@ -426,6 +426,62 @@ img {
 
     }
 
+
+
+}
+
+
+
+.embeded-sun {
+    width: 100px;
+    margin: 50px;
+    animation: rotation 10s linear infinite;
+}
+
+.embeded-sun svg .one {
+    transition: fill 1s;
+}
+
+.embeded-sun svg:hover .one {
+    fill: #f00;
+}
+
+.embeded-sun .two {
+    fill: #ffce00;
+}
+
+.embeded-sun .one {
+    fill: #ffb000;
+}
+
+.embeded-sun .middle {
+    fill: #ff0;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.oldtown {
+    padding: 0;
+    margin: 0 auto;
+    border: solid thin red;
+    text-align: center;
+
+}
+
+.oldtown svg {
+
+    padding: 0;
+    margin: 0 auto;
+    border: solid thin yellow;
 
 
 }
